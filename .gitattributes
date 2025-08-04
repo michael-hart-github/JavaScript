@@ -1,0 +1,16 @@
+# See: https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings#example for an example
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Declare that Markdown files will always have LF line endings on checkout.
+# I set this because  Obsidian in Windows uses LF, while Windows typically uses CRLF.
+*.md text eol=lf
+
+# Declare files that JSON files will always change to LF on checkout.
+*.json text=auto
+
+# Denote all files that are truly binary and should not be modified.
+# See this for more info: https://git-scm.com/docs/gitattributes#_marking_files_as_binary
+*.png binary
+*.jpg binary
