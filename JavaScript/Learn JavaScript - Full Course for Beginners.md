@@ -130,7 +130,7 @@ Basically, the first word of a name is lower case. Proceeding words in the varia
 var sum = 10 + 10;
 console.log(sum); // output is 20
 ```
-## Augmented addition
+### Augmented addition
 
 Instead of writing something like this:
 
@@ -152,15 +152,66 @@ console.log(sum); // output is 20
 var sum = 10 - 5;
 console.log(sum); // output is 5
 ```
+### Augmented subtraction
+
+Instead of writing something like this:
+
+```js
+var sum = 10;
+sum = sum - 5;
+console.log(sum); // output is 5
+```
+
+It's possible to write something like this instead:
+
+```js
+var sum = 10;
+sum -= 5;
+console.log(sum); // output is 5
+```
 ## Multiplication
 ```js
 var sum = 10 * 5;
 console.log(sum); // output is 50
 ```
+### Augmented multiplication
+
+Instead of writing something like this:
+
+```js
+var sum = 10;
+sum = sum * 2;
+console.log(sum); // output is 20
+```
+
+It's possible to write something like this instead:
+
+```js
+var sum = 10;
+sum *= 2;
+console.log(sum); // output is 20
+```
 ## Division 
 ```js
 var sum = 10 / 5;
 console.log(sum); // output is 2
+```
+### Augmented division
+
+Instead of writing something like this:
+
+```js
+var sum = 10;
+sum = sum / 2;
+console.log(sum); // output is 5
+```
+
+It's possible to write something like this instead:
+
+```js
+var sum = 10;
+sum /= 2;
+console.log(sum); // output is 5
 ```
 ## Multiplying decimals
 
@@ -236,5 +287,44 @@ var myDecimal = 3.1;
 var otherDecimal = 0.0009; // example with more zeros
 ```
 
+# Strings
+## String literals
 
-test
+String literals can be defined with any of the following:
+* Back ticks: \`
+* Single quotes: '
+* Double quotes: "
+
+When a string is surrounded with any of the above, it is a string literal
+
+```js
+var firstName = "Mike"; // the word "Mike" is a string literal
+```
+
+## Escape characters
+
+In the event you have text that needs to contain a quote, for example: "Four score and seven year ago..." That phrase must be properly quoted in order to indicate that it is a quotation taken from another source. To do that, you must use the backslash (\) character.
+
+```js
+var aQuoteWithAttribution = "As a former President once said, \"Four score and seven year ago...\", it should be recalled how phrases change over time."
+console.log(aQuoteWithAttribution); /* output is: "As a former President once said, 'Four score and seven year ago...', it should be recalled how phrases change over time." */
+```
+## Alternative to backslash - single quote
+
+It is fairly uncommon to *need* to escape double quotes with backslashes. Instead, the *double quotes* surrounding a string of text which contains double quotes can instead be escaped by surrounding that block of text with *single* quotes.
+
+```js
+var aQuoteWithAttribution = 'As a former President once said, "Four score and seven year ago...", it should be recalled how phrases change over time.'
+console.log(aQuoteWithAttribution); /* output is: "As a former President once said, 'Four score and seven year ago...', it should be recalled how phrases change over time." */
+```
+
+This is helpful because excess characters do not have to be added into the body of the string literal.
+
+## Alternative to backslash - back tick
+
+In cases where a quoted piece of text contains both double quotes *and* single quotes, it is possible to avoid using backslash by instead surrounding the string literal with back ticks.
+
+```js
+var aComplexQuote = `In his most famous biography, the author wrote: 'As a former President once said, "Four score and seven year ago...", it should be recalled how phrases change over time.' Although this is technically true, it ought also be recalled that the study of language informs readers of those changes to language, and we need not 'dumb down' our means of writing in order to meet modern sensibilities.`
+console.log(aComplexQuote); /* output is: "In his most famous biography, the author wrote: 'As a former President once said, 'Four score and seven year ago...', it should be recalled how phrases change over time.' Although this is technically true, it ought also be recalled that the study of language informs readers of those changes to language, and we need not 'dumb down' our means of writing in order to meet modern sensibilities."*/
+```
