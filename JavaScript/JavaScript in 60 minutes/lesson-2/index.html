@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        document.body.style.background = "blue";
+        alert("Hello World!");
+        alert("Hello JavaScript!");
+        alert("Hello GitHub!");
+    </script>
+</body>
+</html>
+
+
+
+
+You need to verify your permissions can be lowered at will. You can check this with an elevated EP, like `GET /accounts`.
+
+1. `GET /accounts`. This requires elevated permissions to succeed. Confirm you can run it.
+2. `GET /user/assumedRoles`. This should return a blank array.
+3. `PUT /user/assumedRoles/{role}`. Set a role for yourself. I went with `PUT /user/assumedRoles/User`.
+4. `GET /user/assumedRoles`. This should now return a result
+5. `GET /accounts`. This should now return a 403 error.
+6. `DELETE /user/assumedRoles`. This removes the lowered permissions.
+7. Rerun both GET requests.
