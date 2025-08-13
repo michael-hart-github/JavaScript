@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "3646c4380ca799a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dd925b8de4e95b5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cca85321a02b94a0",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d38b774d3f8d581b",
+    "type": "split",
+    "children": [
+      {
+        "id": "34462f46accf1928",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a0e9fc34b000605",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eadd51b36fd0fd75",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f648d483efcb98e4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9d226a87af1bb68c",
+    "type": "split",
+    "children": [
+      {
+        "id": "1352dad79f271b68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "51d43adb6f128645",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "c3c3395237158579",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "bb9e0bb2dcde5158",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "cc18401ddd1140ec",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "7a0e9fc34b000605",
+  "lastOpenFiles": [
+    "0 - Fleeting/CASE-485.md",
+    "JavaScript/Learn JavaScript in 60 Minutes - The Ultimate Beginner Course.md",
+    "0 - Fleeting",
+    "Pasted image 20250811170147.png",
+    "Pasted image 20250811165829.png",
+    "JavaScript/JavaScript in 60 minutes/lesson-2/index.html",
+    "JavaScript/JavaScript in 60 minutes/lesson-2/index2.html",
+    "JavaScript/JavaScript in 60 minutes/lesson-1/index.html",
+    "JavaScript/JavaScript in 60 minutes/lesson-2",
+    "JavaScript/JavaScript in 60 minutes/lesson-1",
+    "JavaScript/JavaScript in 60 minutes/index2.html",
+    "Untitled.md",
+    "JavaScript/Untitled.md"
+  ]
+}
