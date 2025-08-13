@@ -11,10 +11,14 @@
             "id": "cca85321a02b94a0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript/Learn JavaScript in 60 Minutes - The Ultimate Beginner Course.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Learn JavaScript in 60 Minutes - The Ultimate Beginner Course"
             }
           }
         ]
@@ -161,8 +165,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7a0e9fc34b000605",
+  "active": "cca85321a02b94a0",
   "lastOpenFiles": [
+    "JavaScript/JavaScript in 60 minutes/Lesson-3/index.html",
+    "JavaScript/JavaScript in 60 minutes/Lesson-3/app.js",
+    "JavaScript/JavaScript in 60 minutes/Lesson-3",
+    "Lesson-3",
     "0 - Fleeting/CASE-485.md",
     "JavaScript/Learn JavaScript in 60 Minutes - The Ultimate Beginner Course.md",
     "0 - Fleeting",
