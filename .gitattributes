@@ -10,7 +10,6 @@
 # Declare files that JSON files will always change to LF on checkout.
 *.json text=auto
 
-
 # Denote all files that are truly binary and should not be modified.
 # See this for more info: https://git-scm.com/docs/gitattributes#_marking_files_as_binary
 *.png binary
