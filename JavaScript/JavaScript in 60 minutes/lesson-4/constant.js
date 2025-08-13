@@ -1,0 +1,4 @@
+const username;
+
+username = "Mike";
+
