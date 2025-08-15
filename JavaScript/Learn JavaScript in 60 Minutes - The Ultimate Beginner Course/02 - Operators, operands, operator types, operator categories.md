@@ -150,3 +150,5 @@ false
 This type of operator is used to combine conditions like `AND` and `OR`. 
 
 No example given. Presenter says it will be covered later on.
+
+stopped at 32:08
