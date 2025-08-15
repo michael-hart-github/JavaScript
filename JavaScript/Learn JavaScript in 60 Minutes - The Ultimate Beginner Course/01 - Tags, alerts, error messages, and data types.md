@@ -28,7 +28,7 @@ To make an alert, put it within the script tag, like so
 ```
 
 It should look something like this
-![[Pasted image 20250811165829.png]]
+![[alert.png]]
 ## Multiple `alerts`
 If you want to make multiple alerts, it would look something like this:
 
@@ -62,7 +62,7 @@ You instead wrote this:
 
 You wouldn't see the alert popup, but if you opened DevTools, you would see this in the console
 
-![[Pasted image 20250811170147.png]]
+![[error-message.png]]
 
 `Uncaught SyntaxError: missing ) after argument list (at index.html:11:15)`
 # One of the main purposes of JavaScript is…
@@ -256,15 +256,13 @@ Different data types are treated differently.
 
 ```js
 console.log(7 + 4);
+11
 ```
-
-Output: `11`
 
 ```js
 console.log("7" + "4");
+74
 ```
-
-Output: `74`
 
 See? When it comes to `numbers`, JavaScript treats the `+` as a means to perform *addition*.
 
@@ -274,7 +272,5 @@ However, when it comes to `strings`, JavaScript treats the `+` as *concatenation
 
 ```js
 console.log(7 + "4");
+74
 ```
-
-Output: `74`
-
