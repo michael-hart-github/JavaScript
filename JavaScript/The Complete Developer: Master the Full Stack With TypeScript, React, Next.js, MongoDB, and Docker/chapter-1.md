@@ -113,3 +113,5 @@ So...it's like the yaml file for docker compose, I guess.
 # node_modules folder
 
 Contains the actual code
+
+stopping on page 36
