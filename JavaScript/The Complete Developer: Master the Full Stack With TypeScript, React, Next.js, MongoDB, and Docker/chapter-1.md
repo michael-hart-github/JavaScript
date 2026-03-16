@@ -71,6 +71,8 @@ More info is available at: https://semver.org/
 #### Example
 1.2.3
 
+major.minor.patch
+
 ### Major version
 A major version introduces an incompatible API change. You should generally be very careful about switching to another major version, as you won’t be able to expect that your application will work flawlessly.
 
@@ -94,19 +96,19 @@ So...it's like the yaml file for docker compose, I guess.
 
 ```json
 {
-  "name": "sample-express",
-  "version": "1.0.0",
-  "description": "sample express server",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node index.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+    "name": "sample-express",
+    "version": "1.0.0",
+    "description": "sample express server",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "run": "node index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2"
+    }
 }
 ```
 
@@ -114,4 +116,74 @@ So...it's like the yaml file for docker compose, I guess.
 
 Contains the actual code
 
-stopping on page 36
+# Dependencies
+There are both `dependencies`, and `devDependencies`.
+
+Dependencies list everything needed to run a project, as well as required version numbers; npm only required the major version number (the "major" of major.minor.patch). This gives you a fairly up-to-date version of a dependency, without risking stability.
+
+A dependency can be anything from a framework, to a helper module, to other types of things.
+
+## Example
+In a later project, we will have dependencies that require Next.JS (as a SPA framework) and "Mongoose" with MongoDB for the database.
+
+## Install location
+Dependencies are installed into the folder `node_modules`.
+
+# devDependencies
+These dependencies cover everything that is required to develop a project, as well as their version information. Generally speaking, the devDependencies may be lesser than regular dependencies, because you do not necessarily need to *run* the application, but merely develop something to be used by the application.
+
+devDependencies are ignored by packaging scripts, and are not part of *deployed* applications.
+
+devDependencies typically include things like: testing frameworks, linters, and build tools like webpack and Babel.
+
+## Example
+Again, for a later project, we will have devDependencies that require TypeScript's type definitions.
+
+## Install location
+Just like regular dependencies, devDependencies are installed into the folder `node_modules`.
+
+# package-lock.json file
+There is a problem with semantic versioning: Between different minor or patch versions new issues may be introduced. This is because npm has no quality control, meaning any patch or minor version update has the *potential* of introducing incompatible API changes (changes that *should have* been marked as major version changes.) This means that even minor updates could result in broken builds. And *that* is the problem that `package-lock.json` attempts to solve. `package-lock.json` attempts to do so by tracking the exact version of every package and their dependencies. As a result, the size of this file is usually very large, but its entries for the web server we will create later on will look similar to the example below.
+
+## Example of package-lock.json file
+
+```json
+{
+    "name": "sample-express",
+    "lockfileVersion": 2,
+    "requires": true,
+    "packages": {
+        "": {
+            "dependencies": {
+                "express": "^4.18.2"
+            }
+        },
+        "node_modules/accepts": {
+            "version": "1.3.8",
+            "resolved": "https://registry.npmjs.org/accepts/-/accepts-1.3.8.tgz",
+            "integrity": "sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEhosdQ==",
+            --snip--
+        },
+        --snip--
+        "node_modules/express": {
+            "version": "4.18.2",
+            "resolved": "https://registry.npmjs.org/express/-/express-4.18.2.tgz",
+            "integrity": "sha512-5/PsL6iGPdfQ/lKM1UuielYgv3BUoJfz1aUwU9vHZ+J7gyvwdQXFEBIEI==",
+            "dependencies": {
+                "accepts": "~1.3.8",
+                --snip--
+                "vary": "~1.1.2"
+            },
+            "engines": {
+                "node": ">= 0.10.0"
+            }
+        },
+        --snip--
+        "vary": {
+            "version": "1.1.2",
+            "resolved": "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz",
+            "integrity": "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+bfhskkh=="
+        }
+    }
+}
+```
