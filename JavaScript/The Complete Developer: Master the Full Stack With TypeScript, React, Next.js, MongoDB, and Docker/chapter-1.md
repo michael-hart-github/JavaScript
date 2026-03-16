@@ -143,7 +143,9 @@ Again, for a later project, we will have devDependencies that require TypeScript
 Just like regular dependencies, devDependencies are installed into the folder `node_modules`.
 
 # package-lock.json file
-There is a problem with semantic versioning: Between different minor or patch versions new issues may be introduced. This is because npm has no quality control, meaning any patch or minor version update has the *potential* of introducing incompatible API changes (changes that *should have* been marked as major version changes.) This means that even minor updates could result in broken builds. And *that* is the problem that `package-lock.json` attempts to solve. `package-lock.json` attempts to do so by tracking the exact version of every package and their dependencies. As a result, the size of this file is usually very large, but its entries for the web server we will create later on will look similar to this:
+There is a problem with semantic versioning: Between different minor or patch versions new issues may be introduced. This is because npm has no quality control, meaning any patch or minor version update has the *potential* of introducing incompatible API changes (changes that *should have* been marked as major version changes.) This means that even minor updates could result in broken builds. And *that* is the problem that `package-lock.json` attempts to solve. `package-lock.json` attempts to do so by tracking the exact version of every package and their dependencies. As a result, the size of this file is usually very large, but its entries for the web server we will create later on will look similar to the example below.
+
+## Example of package-lock.json file
 
 ```json
 {
@@ -185,4 +187,3 @@ There is a problem with semantic versioning: Between different minor or patch ve
     }
 }
 ```
-
