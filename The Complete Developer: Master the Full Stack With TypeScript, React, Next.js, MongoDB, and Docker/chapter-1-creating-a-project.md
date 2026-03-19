@@ -8,4 +8,3 @@ Pretty standard stuff out-of-the-gate. You need to make a project folder, go int
 2. `cd sample-express`
 3. `npm init`
 
-Stopping on page 38.
