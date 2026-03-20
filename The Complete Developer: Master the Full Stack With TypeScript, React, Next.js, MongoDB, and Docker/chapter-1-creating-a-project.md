@@ -57,4 +57,19 @@ Simply put, you should make sure npm is updated frequent to avoid security and o
 
 `npm update`
 
-Stopping on page 41.
+## Removing dependencies
+
+If you have something like end-to-end testing installed (karma) and later decide you no longer need it, you can have it removed from `node_modules` and `package.json` with
+
+`npm uninstall karma`
+
+## Installing dependencies
+
+If you need to install dependencies and devDependencies onto a computer, you can use `npm install` to have them installed into `node_modules`.
+
+If you wish to simulate this, do the following
+
+1. Make a new folder
+2. Copy and paste `package.json` and `package-lock.json` into that folder
+3. Within that folder, run `npm install`
+
