@@ -1,7 +1,9 @@
 # Creating a Project
+
 Below will be some of the most-used day-to-day commands for working on a project. By performing these commands, I will have made a package.json file, and a production-ready project folder that has one installed package: Express.JS
 
 ## Make a folder, move in, and initialize npm
+
 Pretty standard stuff out-of-the-gate. You need to make a project folder, go into the folder you made, and initialize inside of it, just like you would with git, or Rust or whatever.
 
 1. `mkdir sample-express`
@@ -34,7 +36,7 @@ Now that we have installed (all of?) the stuff we need, we should audit the pack
 
 `npm audit`
 
-Generally speaking, you should run `npm audit` *at least* once every few months.
+Generally speaking, you should run `npm audit` _at least_ once every few months.
 
 ## Fixing vulnerabilities with --force
 
@@ -73,3 +75,8 @@ If you wish to simulate this, do the following
 2. Copy and paste `package.json` and `package-lock.json` into that folder
 3. Within that folder, run `npm install`
 
+The take away is this:
+
+1. When you want to run `git clone` on a repo, ensure you have already setup Git to ignore the `node_modules` directory
+   1. See: `remove-dependencies-from-GitHub-repo.md`
+2. After you run `git clone` a repo, run `npm install` so you have a copy of the dependencies on remote
