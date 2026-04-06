@@ -4,13 +4,13 @@ Starting around page 43, we're told we'll be building a simple Express-based Nod
 
 ## Setup
 
-1. Use the sample-express folder from before
-   1. Note: I'm going to ignore this and use my express-server folder instead. I want to practice this multiple times and I don't feel like switching back and fourth.
+1. Use the sample-express directory from before
+   1. Note: I'm going to ignore this and use my express-server directory instead. I want to practice this multiple times and I don't feel like switching back and fourth.
 2. Initialize a new Node project (`npm init`)
 3. Accept the defaults
 4. Install the latest _major_ version of Express 4 (`npm install express@4`)
    1. Note: I could do `npm install express@5`, but I'd rather just follow things the way the book is written at the moment. <package>@<n> gives you the most recent major version of that package.
-5. Create index.js in the folder (`touch index.js`)
+5. Create index.js in the directory (`touch index.js`)
 
 ## Server Code
 

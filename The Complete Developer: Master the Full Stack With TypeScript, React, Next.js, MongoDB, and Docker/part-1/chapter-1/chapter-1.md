@@ -44,7 +44,7 @@ It is a key element to every Node.JS-based project.
 
 ## Location
 
-It is always in the project root folder.
+It is always in the project root directory.
 
 ## What info does it store
 
@@ -112,7 +112,7 @@ So...it's like the yaml file for docker compose, I guess.
 }
 ```
 
-# node_modules folder
+# node_modules directory
 
 Contains the actual code
 
@@ -127,7 +127,7 @@ A dependency can be anything from a framework, to a helper module, to other type
 In a later project, we will have dependencies that require Next.JS (as a SPA framework) and "Mongoose" with MongoDB for the database.
 
 ## Install location
-Dependencies are installed into the folder `node_modules`.
+Dependencies are installed into the directory `node_modules`.
 
 # devDependencies
 These dependencies cover everything that is required to develop a project, as well as their version information. Generally speaking, the devDependencies may be lesser than regular dependencies, because you do not necessarily need to *run* the application, but merely develop something to be used by the application.
@@ -140,7 +140,7 @@ devDependencies typically include things like: testing frameworks, linters, and 
 Again, for a later project, we will have devDependencies that require TypeScript's type definitions.
 
 ## Install location
-Just like regular dependencies, devDependencies are installed into the folder `node_modules`.
+Just like regular dependencies, devDependencies are installed into the directory `node_modules`.
 
 # package-lock.json file
 There is a problem with semantic versioning: Between different minor or patch versions new issues may be introduced. This is because npm has no quality control, meaning any patch or minor version update has the *potential* of introducing incompatible API changes (changes that *should have* been marked as major version changes.) This means that even minor updates could result in broken builds. And *that* is the problem that `package-lock.json` attempts to solve. `package-lock.json` attempts to do so by tracking the exact version of every package and their dependencies. As a result, the size of this file is usually very large, but its entries for the web server we will create later on will look similar to the example below.

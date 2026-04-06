@@ -34,7 +34,7 @@ Instead of making jsonlint a dependency, you can run: `npx jsonlint package.json
 
 ## When you execute the command `npx jsonlint package.json`, npx is doing this:
 
-1. npx _installs_ the package `jsonlint` into the "global cache folder"
+1. npx _installs_ the package `jsonlint` into the "global cache directory"
 2. It _runs_ `jsonlint`
 3. It _prints_ the contents of `package.json`
 4. It reports (hopefully) no errors

@@ -87,7 +87,7 @@ You probably don't want to put JS directly into HTML files because
 It's better to put JavaScript in its own file, and call it to the HTML page it is needed for.
 
 Example
-1. make a new folder (Lesson-3)
+1. make a new directory (Lesson-3)
 2. Name the JavaScript program `app.js`
 3. Put an alert in the JavaScript program
 
