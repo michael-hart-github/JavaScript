@@ -1,3 +1,5 @@
+Starting on Page 47 (pdf reader) / Page 17 (pdf)
+
 # ESNext import modules
 
 The syntax for `importing` an ESNext module is dependant on the type of `export` created.
