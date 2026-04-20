@@ -31,7 +31,7 @@ You can run something like `npm -v` to see the current version number of npm, ho
 
 > npm comes bundled with node, & most third-party distributions, by default.
 
-> If you're looking to manage multiple versions of node &/or npm, consider using a "Node Version Manager" such as: [...]
+> If you're looking to manage multiple versions of node and/or npm, consider using a "Node Version Manager" such as: [...]
 
 Yes, there are *ways and means* to just install npm, but for all intents and purposes, you (well, *I*) shouldn't bother trying to update npm individually. It is a widely used package manager for a *lot* of JavaScript related software.
 
