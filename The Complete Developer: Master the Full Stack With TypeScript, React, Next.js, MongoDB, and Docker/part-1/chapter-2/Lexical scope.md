@@ -25,3 +25,5 @@ const scopeOf = {
 console.log(scopeOf.traditional());
 console.log(scopeOf.arrow());
 ```
+
+Stopped on page 52, right before "Exploring Practical Use Cases".
