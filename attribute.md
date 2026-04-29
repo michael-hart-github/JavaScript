@@ -1,0 +1,1 @@
+Attributes are *parts* of an [[HTML element]]
