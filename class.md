@@ -1,8 +1,13 @@
+---
+created: 2026-05-03 23:47
+source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-ids-and-classes
+tags: [HTML, Literature]
+---
 The `class` attribute should be used when you want to apply a *set* of CSS [[styles]] to multiple [[HTML elements|elements]], because it does not require you to use unique `class` names.
 
 The `class` attribute can use words that might be considered "reserved" in HTML, like `box`.
 
-## Example
+# Example
 
 ```HTML
 <div class="box"></div>
@@ -10,7 +15,7 @@ The `class` attribute can use words that might be considered "reserved" in HTML,
 
 Multiple `class` names can be assigned to one `class` by using spaces.
 
-## Example
+# Example
 
 ```HTML
 <div class="box red-box"></div>
@@ -18,7 +23,7 @@ Multiple `class` names can be assigned to one `class` by using spaces.
 
 `Class` names also do not need to be unique, and can be assigned to different `class` attributes.
 
-## Example
+# Example
 
 index.html
 ```HTML
@@ -56,6 +61,3 @@ blue-box {
   background-color: blue;
 }
 ```
-
-
-source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-ids-and-classes

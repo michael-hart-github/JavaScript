@@ -1,5 +1,5 @@
 ---
 created: "{{date}} {{time}}"
-source: 
-tags: []
+source:
+tags: [Reference]
 ---

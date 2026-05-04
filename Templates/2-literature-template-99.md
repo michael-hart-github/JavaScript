@@ -1,4 +1,5 @@
 ---
 created: "{{date}} {{time}}"
-multiple sources: 
+source:
+tags: [Literature]
 ---

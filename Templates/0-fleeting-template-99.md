@@ -2,7 +2,7 @@
 created: "{{date}} {{time}}"
 tags:
   - expiration
-  - "#fleeting-note"
+  - Fleeting
 ---
 This expires on {{date}} + 3
 

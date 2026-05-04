@@ -1,9 +1,11 @@
 ---
 created: 2026-05-02 17:48
 source: https://www.goodnotes.com/blog/zettelkasten-method
-tags: ["#fleeting-note", expiration]
+tags: [Zettelkasten]
 ---
-This expires on 2026-05-02 + 3
+
+> [!Important] This is a master note
+> This note is not required to follow any Zettelkasten rules. It is a defining feature of how I should arrange all notes within this vault, and is not expected or required to follow any patterns or rules it describes.
 
 I don't remember how to take good Zettelkasten notes. I need to re-read stuff. The notes I am taking for HTML just suck so hard.
 
@@ -71,18 +73,18 @@ Perhaps it starts with the question from the fleeting note. Perhaps it starts wi
 
 In turn, you begin to look up more information on the topic. As you gather those new sources, you repeat the process above:
 
-* You write literature notes (aka source notes) on whatever media or material you come across, focusing on "*ideas* not *summaries*"
-	* Again, a singular source may have multiple core ideas or concepts to cover. That would mean multiple literature notes. Conversely, other sources might barely have a single idea (if any at all) depending on how in-depth or shallow the material is
-* You create Fleeting notes of whatever ideas pop into existence as you write those literature notes
+- You write literature notes (aka source notes) on whatever media or material you come across, focusing on "*ideas* not *summaries*"
+	- Again, a singular source may have multiple core ideas or concepts to cover. That would mean multiple literature notes. Conversely, other sources might barely have a single idea (if any at all) depending on how in-depth or shallow the material is
+- You create Fleeting notes of whatever ideas pop into existence as you write those literature notes
 
 And finally, the critical, key component
 
-* You *update* the *existing* Permanent note with more information gathered from those new literature notes
+- You *update* the *existing* Permanent note with more information gathered from those new literature notes
 
 And overtime, *multiple* Permanent notes may start to overlap into a kind of "central theme" or idea. That is where the ammunition for books, articles, essays, papers, etc. come from. Permanent notes are not necessarily a paper by themselves (although they very well could be, under various circumstances). It is the conglomeration of Permanent notes smashing into one another that make for compelling reading, interesting ideas, new and unrealized interactions, and numerous other things. The manner in which they overlap is what will give you true and unexpected depth.
 
 ## Reference notes
-Reference notes can serve as a kind of "universal translator" of sorts. 
+Reference notes can serve as a kind of "universal translator" of sorts.
 
 Instead of needing to redefine a niche word in multiple notes, it may be more convenient to have a kind of centralized "guide" or reference bay to store those terms. This can have several key benefits:
 
@@ -102,17 +104,17 @@ Later, as you went on to learn more about programming, you started to realize th
 In turn, you decide to update your Reference note for the word function, and change the definition to something like:
 
 > A function is a piece of code that only needs to be written down once, and can then be imported and called in different parts of code.
-> 
+>
 > By using a function, you help to eliminate the overall amount of redundant code present in a program. This is beneficial because it makes code easier to read, review, and maintain.
 
 Later on, you start to apply a kind of standard format or template to the way reference notes for computer programming are formatted, and update the text might even expand to read something like this:
 
 > # Summary
 > A function is a piece of code that only needs to be written down once, and can then be imported and called in different parts of code.
-> 
+>
 > ## Why use it?
 > When you use a function, you eliminate the total number of Lines of Code (LOC) present in a code base. The smaller the LOC, the quicker you can read, understand, review, and update the program.
-> 
+>
 > ## Variations
 > Functions come in two types:
 > 1. Traditional
@@ -134,7 +136,7 @@ Later on, you start to apply a kind of standard format or template to the way re
 > 	return x * x;
 > }
 > ```
-> 
+>
 > ## Example of an arrow function
 > ```JavaScript
 > // Using a concise body

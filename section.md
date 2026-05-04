@@ -1,8 +1,13 @@
-The `section` element i used to divide parts of HTML into different sections.
+---
+created: 2026-05-04 00:15
+source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-div-elements
+tags: [HTML, Literature]
+---
+The `section` [[HTML element|element]] I used to divide parts of HTML into different sections.
 
 The `section` element does have a [[semantic]] meaning.
 
-# Example of section
+# Example of a section
 
 ```HTML
 <section>
@@ -18,5 +23,3 @@ The `section` element does have a [[semantic]] meaning.
   </ul>
 </section>
 ```
-
-Source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-div-elements

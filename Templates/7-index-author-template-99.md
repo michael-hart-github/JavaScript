@@ -1,8 +1,9 @@
 ---
-biography: 
-books: 
+biography:
+books:
 created: "{{date}} {{time}}"
 name: "{{title}}"
-social media: 
-website: 
+social media:
+tags: [Index]
+website:
 ---
