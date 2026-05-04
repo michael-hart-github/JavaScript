@@ -1,15 +1,31 @@
-The `id` [[attribute]] helps identify [[HTML elements]]. You should use the id attribute when you want to target a *specific* element, because the `id` attribute must always be unique.
+---
+created: 2026-05-03 23:59
+source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-ids-and-classes
+tags: [HTML, Literature]
+---
+# What is the id attribute?
+The `id` [[attribute]] is used to identify specific [[HTML elements|elements]] of HTML.
 
-This is useful because you can reference the id of that element within [[JavaScript]] or [[CSS]].
+The `id` attribute must always be unique.
 
-The `id` attribute **cannot** have a space in it, and *must* be unique.
-## Example of id
+The id attribute cannot contain spaces.
+# When should I use id?
+You should use the `id` attribute if you want to target a *specific* HTML element.
+
+## Why shouldn't I just use `class`, instead?
+Class is used when you want to target multiple elements in HTML. Class is not intended for targeting specific HTML elements.
+
+## How is `id` useful?
+`id` is useful because the ability to reference a specific HTML element allows you to reference it in [[JavaScript]] or [[CSS]].
+
+# Examples of using the id attribute
+## Example of attaching id attribute to an HTML element for later use
 ```HTML
 <h1 id="title">Movie Review Page</h1>
-<h2 id="subtitle">Text</h2>
+<h2 id="subtitle">On this page, we review movies</h2>
 ```
 
-## Example of referencing an id
+## Example of referencing an id attribute
 
 index.html
 ```HTML
@@ -25,6 +41,7 @@ index.html
   </head>
   <body>
     <h1 id="title">Movie Review Page</h1>
+    <h2 id="subtitle">On this page, we review movies</h2>
   </body>
 </html>
 ```
@@ -34,10 +51,8 @@ styles.css
 #title {
 	color: red;
 }
+#subtitle {
+	color: blue;
+}
 ```
-
-The id `title` is referenced from `index.html` to `styles.css`
-
-
-
-Source: https://www.freecodecamp.org/learn/responsive-web-design-v9/lecture-html-fundamentals/what-are-ids-and-classes
+The id `title` is referenced from `index.html` to `styles.css`, and the text is made *red*. The `subtitle` text is made *blue*, following the same method.
